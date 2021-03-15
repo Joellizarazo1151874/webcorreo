@@ -5,24 +5,25 @@
 	<title>Correo electronico</title>
 </head>
 <body>
-	<form action="enviar.php" method="post"> 
-		<label for="name">Igrese su nombre:</label>
-		<input type="text" placeholder="Escribe tu nombre" maxlength="50" name="name" id="name" class="name"><br>
-
+	<form action="enviar2.php" method="post" id="contact-from" name="contact-from"> 
+		<div class="form-group">
+			<label for="name">Igrese su nombre:</label>
+			<input type="text" placeholder="Escribe tu nombre" maxlength="50" name="nombre" id="name" 	class="form-control name-field" required="required"><br>
+		</div>
 		<label for="subject">Asunto:</label>
 		<input class="subject" type="text" placeholder="Escribe tu Asunto" maxlength="100" name="phone" id="subject"><br>
+		<div class="form-group">
+			<label for="email">Igrese su email:</label>
+			<input type="email" placeholder="Escribe tu Correo" name="email" id="email" class="form-control mail-field" required="required"><br>
+		</div>
+		<div class="form-group">
+			<label for="message">Igrese un mensaje:</label>
+			<textarea class="form-control" name="mensaje" id="message" required="required" rows="8" placeholder="mensaje"></textarea><br><hr>
+		</div>
 
-		<label for="email">Igrese su email:</label>
-		<input type="text" placeholder="Escribe tu Correo" name="mail" id="mail" class="email"><br>
-
-		<label for="message">Igrese un mensaje:</label>
-		<textarea class="message" name="message" id="message" placeholder="mensaje"></textarea><br><hr>	
-
-		<div class="clear"></div>
-			<div class="col-md-8">
-				<button type="submit" class="btn btn-primary">ENVIAR </button>
-				<label><input type="checkbox" name="acepto" value="Acepto"><font color="#ECECEC">He leido y acepto los terminos del <a href="docs/privacy.pdf"><u><font color="#C2FBF3">Aviso de privacidad</font></u></a></font></label>
-			</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary">ENVIAR </button>
+		</div>
 	</form>
 
 </body>
