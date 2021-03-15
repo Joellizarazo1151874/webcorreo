@@ -5,23 +5,24 @@
 	<title>Correo electronico</title>
 </head>
 <body>
-	<a href="mailto:endersonjoellg@ufps.edu.co">Clicka para enviar email a un destinatario</a>
-	<form>
-		<label for="nombre">Igrese su nombre:</label>
-		<input class="" style="" type="text" placeholder="Escribe tu npmbre" maxlength="50" name="nombre" id="nombre"><br>
+	<form action="enviar.php" method="post"> 
+		<label for="name">Igrese su nombre:</label>
+		<input type="text" placeholder="Escribe tu nombre" maxlength="50" name="name" id="name" class="name"><br>
 
 		<label for="subject">Asunto:</label>
-		<input class="" style="" type="text" placeholder="Escribe tu npmbre" maxlength="50" name="subject" id="subject"><br>
+		<input class="subject" type="text" placeholder="Escribe tu Asunto" maxlength="100" name="phone" id="subject"><br>
 
 		<label for="email">Igrese su email:</label>
-		<input type="email" placeholder="Escribe tu email" name="email" id="email"><br>
+		<input type="text" placeholder="Escribe tu Correo" name="mail" id="mail" class="email"><br>
 
 		<label for="message">Igrese un mensaje:</label>
-		<textarea class="" name="message" id="message"></textarea><br><hr>	
+		<textarea class="message" name="message" id="message" placeholder="mensaje"></textarea><br><hr>	
 
-		<input class="" type="submit" name="submit">
-		<button>Cancelar</button>
-
+		<div class="clear"></div>
+			<div class="col-md-8">
+				<button type="submit" class="btn btn-primary">ENVIAR </button>
+				<label><input type="checkbox" name="acepto" value="Acepto"><font color="#ECECEC">He leido y acepto los terminos del <a href="docs/privacy.pdf"><u><font color="#C2FBF3">Aviso de privacidad</font></u></a></font></label>
+			</div>
 	</form>
 
 </body>
