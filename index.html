@@ -1,31 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Correo electronico</title>
-	<link rel="stylesheet" href="enviar2.php">
-</head>
-<body>
-	<form action="enviar2.php" method="post" id="contact-from" name="contact-from"> 
-		<div class="form-group">
-			<label for="name">Igrese su nombre:</label>
-			<input type="text" placeholder="Escribe tu nombre" maxlength="50" name="nombre" id="name" 	class="form-control name-field" required="required"><br>
-		</div>
-		<label for="subject">Asunto:</label>
-		<input class="subject" type="text" placeholder="Escribe tu Asunto" maxlength="100" name="phone" id="subject"><br>
-		<div class="form-group">
-			<label for="email">Igrese su email:</label>
-			<input type="email" placeholder="Escribe tu Correo" name="email" id="email" class="form-control mail-field" required="required"><br>
-		</div>
-		<div class="form-group">
-			<label for="message">Igrese un mensaje:</label>
-			<textarea class="form-control" name="mensaje" id="message" required="required" rows="8" placeholder="mensaje"></textarea><br><hr>
-		</div>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>mi formulario</title>
+		<link rel="stylesheet" href="estilos.css">
+	</head>
 
-		<div class="form-group">
-			<button type="submit" class="btn btn-primary">ENVIAR </button>
-		</div>
-	</form> 
-
-</body>
+	<body>
+		<form action="mailto:endersonlizarazo3@gmail.com" method="post" enctype="text/plain">
+		<p>
+		Nombre: <input type="text" name="Nombre"></input><br>
+		<label for="email">Email: </label>
+		<input id="email" name="nombre" type="email" />    	  
+        ¿Qué te pareció la página?
+		<textarea id="opinion" name="opinion"></textarea>
+		<input type="submit" value="Enviar!"></input>
+		</p>
+		</form>
+	</body>
 </html>
