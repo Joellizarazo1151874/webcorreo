@@ -10,9 +10,10 @@
 		<form action="enviar.php" method="post">
 			<h2>CONTACTO</h2>
 		    <input type="text" name="nombre" placeholder="Nombre" required>
-    		<input type="text" name="correo" placeholder="Correo" required>
+    		<input type="mail" name="correo" placeholder="Correo" required>
+    		<input type="text" name="asunto" placeholder="Asunto" required>
    			<textarea name="mensaje" placeholder="Escribe aqui su mensaje" required></textarea>
-			<input type="submit" value="ENVIAR" id="boton">
+			<input type="button" value="ENVIAR" id="boton">
   		</form>
 	</body>
 </html>
