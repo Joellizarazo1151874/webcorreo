@@ -1,29 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html>                                                                     
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>mi formulario</title>
+		<title>Formulario de contacto</title>
+		<meta charset="utf-8">
 		<link rel="stylesheet" href="estilos.css">
 	</head>
-
 	<body>
 		<form action="mailto:endersonlizarazo3@gmail.com" method="post" enctype="text/plain">
- 			<ul>
- 				<li>
- 			    	<label for="name">Nombre:</label>
-			        <input type="text" id="name" name="user_name" />
-		    	</li>
-  				<li>
-    				<label for="mail">Correo electrónico:</label>
-    				<input type="email" id="mail" name="user_email" />
-  				</li>
-  				<li>
-    				<label for="msg">Mensaje:</label>
-    				<textarea id="msg" name="user_message"></textarea>
-  				</li>
-  				<li>
-  					<input name="Submit" type="submit" value="Enviar" />
-				</li>
-  			</ul>
+			<h2>CONTACTO</h2>
+		    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+    		<input type="email" id="mail" name="correo" placeholder="Correo" />
+   			<textarea id="msg" name="mensaje" placeholder="Escribe aqui su mensaje"></textarea>
+			<input type="button" value="ENVIAR" id="boton">
+  		</form>
 	</body>
 </html>
