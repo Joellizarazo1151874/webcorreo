@@ -48,3 +48,17 @@ textarea{
 #boton:hover{
   cursor: pointer;
 }
+
+@media (max-width:480px){
+  form{
+    width: 100%;
+  }
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  background: rgba(0,0,0,0.4);
+  margin-top: 20px; 
+}

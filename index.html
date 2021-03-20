@@ -7,12 +7,12 @@
 		<link rel="stylesheet" href="estilos.css">
 	</head>
 	<body>
-		<form action="mailto:endersonlizarazo3@gmail.com" method="post" enctype="text/plain">
+		<form action="enviar.php" method="post">
 			<h2>CONTACTO</h2>
-		    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
-    		<input type="email" id="mail" name="correo" placeholder="Correo" />
-   			<textarea id="msg" name="mensaje" placeholder="Escribe aqui su mensaje"></textarea>
-			<input type="button" value="ENVIAR" id="boton">
+		    <input type="text" name="nombre" placeholder="Nombre" required>
+    		<input type="text" name="correo" placeholder="Correo" required>
+   			<textarea name="mensaje" placeholder="Escribe aqui su mensaje" required></textarea>
+			<input type="submit" value="ENVIAR" id="boton">
   		</form>
 	</body>
 </html>
